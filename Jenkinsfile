@@ -11,5 +11,10 @@ pipeline {
         sh 'cat tacocat'
       }
     }
+    stage('tacocat backwards') {
+      steps {
+        sh 'cat tacocat-backwards'
+      }
+    }
   }
 }
