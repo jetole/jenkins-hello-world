@@ -6,5 +6,10 @@ pipeline {
         echo 'Hello, World!'
       }
     }
+    stage('tacocat') {
+      steps {
+        sh 'cat tacocat'
+      }
+    }
   }
 }
